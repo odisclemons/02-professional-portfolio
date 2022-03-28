@@ -1,0 +1,36 @@
+:root {
+  --mainColor: #92cccd;
+  --secColor: #31343d;
+  --thirdColor: #ededf6;
+}
+html {
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secColor);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: 1rem;
+  padding: 0.25rem;
+  color: var(--mainColor);
+  border-bottom: 3px solid var(--mainColor);
+}
+
+nav ul li {
+  margin: 0 0.25rem;
+}
+
+nav h1 {
+  color: var(--secColor);
+  background-color: var(--mainColor);
+  padding: 0.5rem;
+  padding-left: 2rem;
+}
