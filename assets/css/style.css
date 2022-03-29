@@ -67,14 +67,22 @@ nav h1 {
   justify-content: flex-end;
   align-items: flex-end;
 }
-
+.jt .green-cover {
+  background-color: rgba(var(--mainColorRGB), 0.3) !important;
+}
 .green-cover {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(var(--mainColorRGB), 0.3);
+  background-color: rgba(var(--mainColorRGB), 0.55);
+  transition: 0.5s;
+}
+
+.green-cover:hover {
+  background-color: rgba(var(--mainColorRGB), 0.1);
+  transition: 0.5s;
 }
 
 .jt h2 {
