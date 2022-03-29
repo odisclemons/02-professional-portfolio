@@ -92,6 +92,9 @@ section {
 .section-content {
   padding: 1rem;
   width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .section-content p {
@@ -101,11 +104,21 @@ section {
 .gallery-box {
   border: 5px solid var(--mainColor);
   position: relative;
+  margin: 1rem 0;
 }
 
 .gallery-box-lg {
   height: 20rem;
   width: 100%;
+}
+
+.gallery-box-sm {
+  height: 10rem;
+  width: 49%;
+}
+
+.gallery-box-sm h1 {
+  font-size: 1.4rem;
 }
 
 .gallery-box-label {
