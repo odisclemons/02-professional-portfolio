@@ -3,10 +3,17 @@
   --mainColorRGB: 146, 204, 205;
   --secColor: #31343d;
   --thirdColor: #ededf6;
+  --mainColorDark: #445876;
 }
 
 html {
   font-size: 20px;
+  color: var(--mainColorDark);
+  background-color: var(--thirdColor);
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 nav {
@@ -69,4 +76,38 @@ nav h1 {
   position: relative;
   display: inline-block;
   margin: 2rem;
+}
+
+section {
+  display: flex;
+  padding: 2rem;
+}
+
+.section-heading {
+  border-right: 4px solid var(--mainColorDark);
+  text-align: end;
+  padding: 1rem;
+  width: 30%;
+}
+
+.section-content {
+  padding: 1rem;
+  width: 90%;
+}
+
+.section-content p {
+  margin: 1rem;
+}
+
+.gallery-box {
+  border: 4px solid var(--mainColor);
+}
+
+.gallery-box-lg {
+  height: 20rem;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
 }
