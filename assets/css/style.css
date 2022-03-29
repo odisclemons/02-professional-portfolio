@@ -56,20 +56,19 @@ nav h1 {
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .green-cover {
-  position: relative;
+  position: absolute;
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   background-color: rgba(var(--mainColorRGB), 0.3);
-  display: flex;
-  flex-direction: column;
-}
-
-.jt .green-cover {
-  justify-content: flex-end;
-  align-items: flex-end;
 }
 
 .jt h2 {
@@ -84,7 +83,7 @@ section {
 }
 
 .section-heading {
-  border-right: 4px solid var(--mainColorDark);
+  border-right: 5px solid var(--mainColorDark);
   text-align: end;
   padding: 1rem;
   width: 30%;
@@ -100,12 +99,23 @@ section {
 }
 
 .gallery-box {
-  border: 4px solid var(--mainColor);
+  border: 5px solid var(--mainColor);
+  position: relative;
 }
 
 .gallery-box-lg {
   height: 20rem;
   width: 100%;
+}
+
+.gallery-box-label {
+  background-color: var(--mainColor);
+  display: inline-block;
+  padding: 1rem;
+  min-width: 10rem;
+  max-width: 25%;
+  position: absolute;
+  bottom: 10%;
 }
 
 footer {
