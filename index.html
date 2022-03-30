@@ -102,7 +102,7 @@
             one language that can literally do it all: Web Assembly. Im joking;
             of course it's Javascript, the one man band.
           </p>
-          <div class="centerStuff">
+          <div class="centerStuff moreContainer">
             <button class="more" id="aboutBtn" onClick="toggleSection('about')">
               Less
             </button>
@@ -180,18 +180,24 @@
     </footer>
   </body>
   <script>
+    //takes section id name.  there is a matching button with the format sectionBtn
     const toggleSection = (section) => {
+      //get section from the dom
       let sect = document.querySelector(`#${section}`);
+
+      //get matching button from the dom
       let btn = document.querySelector(`#${section}Btn`);
+
+      //if the size of section over 500px, callapse to 500 px
       if (sect.offsetHeight > 500) {
         sect.style.height = "500px";
         btn.innerHTML = "More";
         window.location = `#${section}`;
       } else {
+        //if section is 500px, it is collapsed.  set it to auto to expand full height
         sect.style.height = "auto";
         btn.innerHTML = "Less";
       }
-      console.log(sect.offsetHeight);
     };
   </script>
 </html>

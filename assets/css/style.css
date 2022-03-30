@@ -92,10 +92,18 @@ nav h1 {
   margin: 2rem;
 }
 
-.more {
+.moreContainer {
   position: absolute;
   bottom: 0;
-  margin: 1rem auto;
+  width: 100%;
+  margin: 1rem 0 auto;
+  background: linear-gradient(360deg, var(--thirdColor), transparent);
+  padding: 1rem;
+}
+
+.more {
+  background-color: var(--mainColor);
+  color: var(--mainColorDark);
 }
 
 .centerStuff {
@@ -177,6 +185,7 @@ footer nav {
 
 footer nav ul {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   color: var(--mainColorDark);
@@ -185,15 +194,47 @@ footer nav ul {
 
 footer nav ul li {
   border-bottom-color: var(--mainColorDark);
+  margin-bottom: 0.1rem;
 }
 
 button {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-  main,
-  nav {
+@media only screen and (max-width: 768px) {
+  /* tablets and desktop */
+  section {
     flex-direction: column;
+  }
+
+  .section-heading {
+    width: 100%;
+    text-align: center;
+    border: none;
+    text-decoration: underline;
+    background: var(--mainColor);
+    padding: 0.5rem;
+  }
+
+  .section-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .gallery-box-lg {
+    height: 10rem;
+  }
+  .gallery-box-sm {
+    width: 100%;
+  }
+
+  .gallery-box-lg .gallery-box-label h1 {
+    font-size: 1rem;
+  }
+
+  .gallery-box .gallery-box-label h5 {
+    display: none;
   }
 }
