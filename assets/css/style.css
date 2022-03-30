@@ -104,6 +104,10 @@ nav h1 {
 .more {
   background-color: var(--mainColor);
   color: var(--mainColorDark);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  width: 100px;
+  cursor: pointer;
 }
 
 .centerStuff {
