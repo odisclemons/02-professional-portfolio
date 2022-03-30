@@ -49,6 +49,16 @@ nav h1 {
   padding-left: 2rem !important;
 }
 
+#profile-pic {
+  height: 3rem;
+  display: flex;
+  margin: 0;
+}
+
+nav img {
+  height: 90%;
+}
+
 .hlt {
   color: var(--secColor);
   background-color: var(--mainColor);
