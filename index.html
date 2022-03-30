@@ -102,6 +102,11 @@
             one language that can literally do it all: Web Assembly. Im joking;
             of course it's Javascript, the one man band.
           </p>
+          <div class="centerStuff">
+            <button class="more" id="aboutBtn" onClick="toggleSection('about')">
+              Less
+            </button>
+          </div>
         </div>
       </section>
 
@@ -160,10 +165,33 @@
                 >
               </li>
               <li><a href="https://github.com/odisclemons">Github</a></li>
+              <li>
+                <a onClick="alert('I don\'t use such nonesense!')">Twitter</a>
+              </li>
+              <li>
+                <a onClick="alert('Spotify is cool but I don\' use it.')"
+                  >Spotify</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
       </section>
     </footer>
   </body>
+  <script>
+    const toggleSection = (section) => {
+      let sect = document.querySelector(`#${section}`);
+      let btn = document.querySelector(`#${section}Btn`);
+      if (sect.offsetHeight > 500) {
+        sect.style.height = "500px";
+        btn.innerHTML = "More";
+        window.location = `#${section}`;
+      } else {
+        sect.style.height = "auto";
+        btn.innerHTML = "Less";
+      }
+      console.log(sect.offsetHeight);
+    };
+  </script>
 </html>

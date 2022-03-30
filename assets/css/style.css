@@ -92,9 +92,25 @@ nav h1 {
   margin: 2rem;
 }
 
+.more {
+  position: absolute;
+  bottom: 0;
+  margin: 1rem auto;
+}
+
+.centerStuff {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
 section {
   display: flex;
   padding: 2rem;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
 }
 
 .section-heading {
@@ -110,6 +126,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .section-content p {
@@ -162,4 +179,21 @@ footer nav ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  color: var(--mainColorDark);
+  max-width: unset;
+}
+
+footer nav ul li {
+  border-bottom-color: var(--mainColorDark);
+}
+
+button {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
 }
