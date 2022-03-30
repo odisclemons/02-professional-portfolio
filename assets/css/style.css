@@ -115,6 +115,7 @@ nav h1 {
 
 section {
   display: flex;
+  margin: 1rem 0;
   padding: 2rem;
   overflow: hidden;
   position: relative;
@@ -129,6 +130,7 @@ section {
 }
 
 .section-content {
+  position: relative;
   padding: 1rem;
   width: 90%;
   display: flex;
@@ -236,5 +238,9 @@ button {
 
   .gallery-box .gallery-box-label h5 {
     display: none;
+  }
+
+  section {
+    padding: 0.25rem;
   }
 }
