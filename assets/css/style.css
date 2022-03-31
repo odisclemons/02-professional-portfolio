@@ -49,12 +49,6 @@ nav h1 {
   padding-left: 2rem !important;
 }
 
-#profile-pic {
-  height: 3rem;
-  display: flex;
-  margin: 0;
-}
-
 nav img {
   height: 90%;
 }
@@ -94,6 +88,19 @@ nav img {
 .green-cover:hover {
   background-color: rgba(var(--mainColorRGB), 0.1);
   transition: 0.5s;
+}
+
+#profile-pic {
+  height: 10rem;
+  width: 10rem;
+  margin-left: 2rem;
+  border-radius: 50%;
+  border: 5px solid rgba(var(--mainColorRGB), 0.5);
+  overflow: hidden;
+  background-image: url(../images/odis.jpg);
+  background-size: cover;
+  align-self: flex-start;
+  justify-self: center;
 }
 
 .jt h2 {
