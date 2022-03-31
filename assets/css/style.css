@@ -101,6 +101,8 @@ nav img {
   background-size: cover;
   align-self: flex-start;
   justify-self: center;
+  position: absolute;
+  bottom: 10%;
 }
 
 .jt h2 {

@@ -8,6 +8,6 @@ I had alot of fun with this project. The CSS is really my favorite part of codin
 
 ## Here's what the website looks like:
 
-![screenshot of professional portfolio](/assets/images/portolio.webp)
+![screenshot of professional portfolio](/assets/images/portfolio.webp)
 
 You can access my portfolio here: [ https://odisclemons.github.io/02-professional-portfolio/](https://odisclemons.github.io/02-professional-portfolio/)
